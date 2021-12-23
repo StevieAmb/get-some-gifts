@@ -14,7 +14,7 @@
     <main>
       <header>
         <h1>Holiday Shopping List</h1>
-        <h2>Total Cost of Gifts: <span>$???</span></h2>
+        <h2>Total Cost of Gifts: <span id="totalCost">$???</span></h2>
       </header>
       <section>
           <table>
@@ -28,10 +28,10 @@
             </thead>
             <tbody>
             <tr>
-              <td>Recipient Here!</td>
-              <td>Item Here!</td>
-              <td>$???</td>
-              <td><input type="checkbox"></td>
+              <td class="recipient-name" id="recipientName">Recipient Here!</td>
+              <td class="wanted-item" id="wantedItem">Item Here!</td>
+              <td class="cost" id="indivCost">$???</td>
+              <td><input type="checkbox" id="checkBox"></td>
             </tr>
             </tbody>
           </table>
