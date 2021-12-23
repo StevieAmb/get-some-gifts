@@ -6,3 +6,15 @@ const individualCost = document.getElementById('indivCost');
 const checkbox = document.getElementById('checkBox');
 
 //FUNCTIONS
+
+const getAPIData = () => {
+  return fetch('https://mysterious-mesa-00016.herokuapp.com/items')
+  .then(response => response.json())
+  .then((data) => data[recipient])
+  .catch((err) => err)
+}
+
+const parseData = () => {
+  const dataCollection = getAPIData();
+  return dataCollection;
+}
